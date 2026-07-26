@@ -117,25 +117,27 @@ export const projects = [
     title: 'Chatter',
     subtitle: 'Real-Time Chat Application',
     description:
-      'Full-featured messaging app with real-time chat, user authentication, and message persistence.',
+      'WhatsApp-inspired Flutter messenger with instant delivery, user discovery, and presence — built on Firebase Auth, Firestore streams, and feature-first clean architecture.',
     highlights: [
-      'Riverpod state management with async-safe provider patterns',
-      'Firebase Authentication and Cloud Firestore synchronization',
-      'Shipped across 7 iterative phases focused on reliability',
+      'Email/password auth with AuthGate routing and Riverpod StreamProviders',
+      'Real-time 1:1 chat via Firestore streams, auto-scroll, and message persistence',
+      'User discovery with live name search, online status, and last-seen tracking',
+      'FCM device tokens stored per user for push-ready notification wiring',
     ],
     href: 'https://github.com/SIDDHARTH279/Chatter-App',
-    tags: ['Flutter', 'Firebase', 'Riverpod'],
+    tags: ['Flutter', 'Firebase', 'Firestore', 'Riverpod', 'FCM'],
     accent: '#5ec4b4',
   },
   {
     title: 'HabitFlow',
     subtitle: 'Daily Habit Tracker',
     description:
-      'Cross-platform tracker with glassmorphism UI, streak logic, weekly charts, and local reminders.',
+      'Local-first habit tracker with glassmorphism UI, streak logic, weekly/monthly analytics, and exact-time reminders — privacy-focused with zero cloud dependency.',
     highlights: [
-      'Hive local persistence and Provider-driven state',
-      'Streak calculation with repeatDays filtering',
-      'fl_chart dashboards, notifications, swipe-to-delete',
+      'Hive persistence + Provider state; habits, streaks, and stats stay on-device',
+      'Today dashboard with time-based greetings, progress bar, and swipe-to-delete',
+      'Weekly fl_chart trends, color-coded calendar, and per-habit completion rates',
+      'Custom icons/colors, weekday scheduling, dark/light themes, local notifications',
     ],
     href: 'https://github.com/SIDDHARTH279/HabitFlow',
     tags: ['Flutter', 'Hive', 'Provider', 'fl_chart'],
@@ -145,28 +147,30 @@ export const projects = [
     title: 'EduMarket',
     subtitle: 'Course Marketplace & LMS API',
     description:
-      'Multi-role LMS backend for Students, Instructors, and Admins with RBAC and payment-ready schemas.',
+      'Multi-role Learning Management System API for Students, Instructors, and Admins — courses, enrollments, lessons, reviews, and payment tracking in Django REST Framework.',
     highlights: [
-      'Django + DRF with role-based access control',
-      'Relational models for profiles, courses, reviews, payments',
-      'Advanced search and filtering via django-filter',
+      'RBAC across Student / Instructor / Admin with custom Profile on Django User',
+      'Course CRUD, lesson/video content, enroll + add_review custom actions',
+      'Reviews, ratings, and payment/transaction models for marketplace flows',
+      'django-filter search/ordering, pagination, and DRF APITestCase coverage',
     ],
     href: 'https://github.com/SIDDHARTH279/Expense-Tracker-LMS-API',
     tags: ['Django', 'DRF', 'SQLite', 'RBAC'],
     accent: '#c4a06e',
   },
   {
-    title: 'BlogAPI',
-    subtitle: 'Blog / CMS REST Backend',
+    title: 'NotesAPI',
+    subtitle: 'Personal Notes REST Backend',
     description:
-      'RESTful CMS API with CRUD for posts, categories, tags, and comments plus JWT-secured workflows.',
+      'Django REST notes service with categorized CRUD — serializers, viewsets, and migrations structured for a clean personal knowledge / CMS-style API.',
     highlights: [
-      'SimpleJWT authentication and visibility rules',
-      'Draft management for anonymous vs registered users',
-      'Search, ordering, and pagination baked in',
+      'Notes model with category support and Django admin registration',
+      'DRF serializers and URL routing for create, read, update, and delete',
+      'SQLite-backed project layout ready to extend with auth or tags',
+      'Practice ground for Django apps, migrations, and REST resource design',
     ],
-    href: 'https://github.com/SIDDHARTH279',
-    tags: ['Django', 'DRF', 'SimpleJWT'],
+    href: 'https://github.com/SIDDHARTH279/Personal-Notes-Api',
+    tags: ['Django', 'DRF', 'SQLite'],
     accent: '#8a97a3',
   },
 ]
@@ -175,35 +179,35 @@ export const moreProjects = [
   {
     title: 'RentLedger',
     description:
-      'Mobile-first rental property management for landlords — split-rent billing, chat, issue tracking, document vault, and analytics.',
+      'Mobile-first rental OS for landlords — Flutter clients plus Django REST backend with split-rent billing, real-time chat, issue tickets, document vault, and portfolio analytics.',
     href: 'https://github.com/SIDDHARTH279/RentLedger',
     tags: ['Flutter', 'Django', 'DRF'],
   },
   {
     title: 'URL Shortener & Link Analytics API',
     description:
-      'Production-ready shortener with JWT, Base62 codes, Redis caching, geolocation click tracking, QR codes, rate limits, and Celery tasks.',
+      'Production-minded shortener: JWT auth, Base62 codes, custom aliases, expiry, Redis cache, IP geolocation clicks, QR codes, rate limits, and Celery background jobs.',
     href: 'https://github.com/SIDDHARTH279/URL-Shortener-Link-Analytics-API',
     tags: ['Django', 'Redis', 'Celery'],
   },
   {
     title: 'Render FastAPI Project',
     description:
-      'FastAPI service experiments deployed on Render — API design, async handlers, and cloud deployment practice.',
+      'FastAPI service experiments on Render — async route handlers, OpenAPI docs, and end-to-end cloud deploy practice for Python APIs.',
     href: 'https://github.com/SIDDHARTH279/Render-FastApi-Project',
-    tags: ['Python', 'FastAPI'],
+    tags: ['Python', 'FastAPI', 'Render'],
   },
   {
     title: 'DSA LeetCode',
     description:
-      'Ongoing Java problem-solving practice — data structures, algorithms, and interview-ready patterns.',
+      'Java LeetCode practice synced via LeetHub — arrays, two pointers, sorting, and interview patterns with topic-organized solutions.',
     href: 'https://github.com/SIDDHARTH279/DSA-LEETCODE',
     tags: ['Java', 'DSA'],
   },
   {
     title: 'Note App',
     description:
-      'Kotlin note-taking app exploring native Android patterns and Jetpack-era UI foundations.',
+      'Native Kotlin note-taking app exploring Android UI patterns, activity/fragment flows, and Jetpack-era foundations.',
     href: 'https://github.com/SIDDHARTH279/Note-App',
     tags: ['Kotlin', 'Android'],
   },
