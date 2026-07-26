@@ -20,11 +20,11 @@ export const about = {
   focus: [
     {
       title: 'Mobile craft',
-      text: 'Flutter UIs, Riverpod/Provider state, Hive persistence, and notification-driven flows.',
+      text: 'Flutter UIs, Riverpod state, local notifications, OCR helpers, and release-ready Android builds.',
     },
     {
       title: 'Backend systems',
-      text: 'Django REST APIs, JWT auth, RBAC, filtering, and production-minded service design.',
+      text: 'Django REST APIs, JWT auth, PostgreSQL, RBAC, and production deploys on Railway.',
     },
     {
       title: 'Real-time products',
@@ -47,13 +47,14 @@ export const ticker = [
   'MongoDB',
   'Redis',
   'Celery',
+  'Railway',
   'Hive',
   'Provider',
 ]
 
 export const stats = [
-  { value: '11+', label: 'Public repositories' },
-  { value: '4', label: 'Featured products' },
+  { value: '12+', label: 'Public repositories' },
+  { value: '5', label: 'Featured products' },
   { value: '2', label: 'Hackathon finalist runs' },
   { value: '6', label: 'Certifications' },
 ]
@@ -97,6 +98,21 @@ export const skills = [
 ]
 
 export const projects = [
+  {
+    title: 'MediMind',
+    subtitle: 'Medicine Reminder App',
+    description:
+      'Full-stack medicine reminder with Flutter Android client and Django REST API — schedules, today doses, reminders, OCR, and adherence tracking.',
+    highlights: [
+      'JWT auth with Google Sign-In, email/password, and OTP password reset',
+      'Today doses (taken / snooze), local notifications, and user-scoped data isolation',
+      'Prescription OCR (ML Kit), RxNorm search, streak / adherence / calendar analytics',
+      'PostgreSQL API on Railway with signed Android APK releases on GitHub',
+    ],
+    href: 'https://github.com/SIDDHARTH279/medimind',
+    tags: ['Flutter', 'Django', 'DRF', 'PostgreSQL', 'Railway'],
+    accent: '#2EC4B6',
+  },
   {
     title: 'Chatter',
     subtitle: 'Real-Time Chat Application',
